@@ -1,0 +1,33 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1rem;
+}
+nav img {
+  height: 60px;
+}
+menu {
+  list-style-type: none;
+  display: flex;
+  gap: 4rem;
+}
+a.light {
+  color: burlywood;
+}
+
+a.light:hover {
+  color: pink;
+}
+a.dark {
+  color: rgb(255, 21, 21);
+}
+a.dark:hover {
+  color: rgb(155, 0, 0);
+}
+nav.dark {
+  background-color: black;
+}
+img.dark {
+  filter: invert();
+}

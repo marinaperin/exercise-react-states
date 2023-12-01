@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.5s;
+}
+button {
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+  font-style: italic;
+}
+button.light {
+  border: 1px solid grey;
+  background-color: transparent;
+  padding: 0.3rem 0.4rem;
+  border-radius: 60%;
+}
+button.dark {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: transparent;
+  padding: 0.3rem 0.4rem;
+  border-radius: 60%;
+  filter: invert();
+}

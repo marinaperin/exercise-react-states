@@ -1,0 +1,40 @@
+header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 1rem;
+}
+header.dark {
+    background-color: black;
+}
+#room-box img{
+    height: 800px;
+}
+#room-desc{
+    display: grid;
+    margin-top: -10rem;
+    padding: 1rem;
+    text-align: center;
+    place-content: center;
+    margin-right: 3rem;
+}
+#room-desc.light{
+    color: burlywood;
+    margin-right: 5rem;
+    margin-left: -2rem;
+}
+h1.dark, p.dark{
+    color: rgb(255, 55, 55);
+}
+#room-desc h1 {
+    margin-bottom: 2rem;
+}
+#room-desc p {
+    margin-bottom: 2rem;
+}
+#room-btn{
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+#invite{
+    font-size: smaller;
+}
