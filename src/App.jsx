@@ -4,11 +4,11 @@ import Header from "./components/header/Header";
 import Navbar from "./components/navbar/Navbar";
 
 function App() {
-  const [originalClass, setNewClass] = useState("light");
+  const [changeableClass, setNewClass] = useState("light");
 
   let roomHref;
   let roomBio;
-  if (originalClass === "light") {
+  if (changeableClass === "light") {
     roomHref = "/light.jpg";
     roomBio = "Light Interior";
   } else {
@@ -23,10 +23,10 @@ function App() {
           "https://www.creativefabrica.com/wp-content/uploads/2020/07/16/castle-logo-design-palace-logo-fortres-Graphics-4640365-1.jpg"
         }
         logoAlt="logo"
-        oldClass={originalClass}
-        newClass={() => {
+        changingClass={changeableClass}
+        setClass={() => {
           {
-            if (originalClass === "light") {
+            if (changeableClass === "light") {
               setNewClass("dark");
             } else {
               setNewClass("light");
@@ -55,9 +55,10 @@ function App() {
       <Header
         roomUrl={roomHref}
         roomAlt={roomBio}
-        oldClass={originalClass}
+        changingClass={changeableClass}
         title="Our Castle invites you to explore our rooms"
         description="You will enjoy a once in a lifetime experience.."
+        btnText='Explore Our Rooms'
         invite="Try changing mode with the apposite button and you will understand.."
       />
     </>

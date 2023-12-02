@@ -3,25 +3,26 @@ import "./Header.css";
 export default function ({
   roomUrl,
   roomAlt,
-  oldClass,
+  changingClass,
   title,
   description,
+  btnText,
   invite,
 }) {
   return (
-    <header className={oldClass}>
+    <header className={changingClass}>
       <figure>
         <div id="room-box">
           <img src={roomUrl} alt={roomAlt} />
         </div>
       </figure>
-      <section id="room-desc" className={oldClass}>
-        <h1 className={oldClass}>{title}</h1>
-        <p className={oldClass}>{description}</p>
-        <button className={oldClass} id="room-btn">
-          <a href="">Explore Our Rooms</a>
+      <section id="room-desc" className={changingClass}>
+        <h1 className={changingClass}>{title}</h1>
+        <p className={changingClass}>{description}</p>
+        <button className={changingClass} id="room-btn">
+          <a href="">{btnText}</a>
         </button>
-        <p className={oldClass} id="invite">
+        <p className={changingClass} id="invite">
           {invite}
         </p>
       </section>
